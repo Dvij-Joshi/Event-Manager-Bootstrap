@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Open modal and set event type based on which register button was clicked
     $('#registerBtnConf').click(function() {
         $('#eventType').val('Conference');
     });
@@ -13,12 +12,10 @@ $(document).ready(function() {
         $('#eventType').val('Milestone');
     });
 
-    // FAQ: simple toggle for answer display (optional, for UX)
     $('.faq-question').on('click', function() {
         $(this).next('.faq-answer').slideToggle(150);
     });
 
-    // Registration form submit
     $('#registrationForm').submit(function(e) {
         e.preventDefault();
         const name = $('#fullName').val();
